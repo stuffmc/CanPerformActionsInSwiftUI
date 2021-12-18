@@ -16,7 +16,7 @@ All you had to do was to do
 
 ```
 class MyUITextField: UITextField {
-    override func textFieldCanPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         action == #selector(UIResponderStandardEditActions.copy(_:))
         || action == #selector(UIResponderStandardEditActions.cut(_:))
         || action == #selector(UIResponderStandardEditActions.paste(_:))
